@@ -4,18 +4,20 @@ import RandomColor from "./components/random-color-generator";
 import StarRating from "./components/star-rating";
 import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
+import TreeView from "./components/tree-view";
+import menu from "./components/tree-view/data";
 
 const App = () => {
   return (
-    <center>
       <div className="app">
+        <center>
         {/* <Accordian/>
     <RandomColor/> */}
         {/* <StarRating/> */}
         {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={'1'}limit={'10'}/> */}
-        <LoadMoreData />
+        {/* <LoadMoreData /> */}</center>
+        <TreeView menu={menu}/>
       </div>
-    </center>
   );
 };
 
