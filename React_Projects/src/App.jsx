@@ -8,6 +8,7 @@ import TreeView from "./components/tree-view";
 import menu from "./components/tree-view/data";
 import QRCodeGenerator from "./components/qr-code-generator";
 import LightDarkMode from "./components/light-dark-mode";
+import ScrollIndicator from "./components/scroll-indicator";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={'1'}limit={'10'}/> */}
         {/* <LoadMoreData /> */}
         {/* <QRCodeGenerator /> */}
-        <LightDarkMode/>
+        {/* <LightDarkMode/> */}
+        <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
       </center>
       {/* <TreeView menu={menu}/> */}
     </div>
